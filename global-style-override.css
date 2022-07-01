@@ -1,0 +1,105 @@
+:root {
+	--main-link-color: #a9a8ee;
+	--ds-text-link-resting: #a9a8ee;
+	--ds-text-highEmphasis: #decefa;
+	--ds-text-subtlest: #efe9f9;
+	--ds-text:  #decefa;
+	--ds-text-subtle: #e2d8f5;
+	--ds-menu-seperator-color: #8c8891;
+	--ds-surface-overlay: #646169;
+	--ds-surface: #323132;
+	--h1-text: #ece6f9;
+	--menu-hover: #3b3b3b;
+	--emphasis-button: #732AEB;
+	--emphasis-button-hover: #6600EB;
+}
+.aui-page-panel, .ghx-backlog-container, .ghx-issue-compact, .ghx-end, .ghx-sprint-group, #ghx-pool, #ghx-column-header-group {
+	background-color: var(--ds-surface) !important;
+}
+.ghx-issue-compact {
+	border-color: var(--ds-menu-seperator-color) !important;
+}
+div[data-resize-control=true] div:first-child {
+	background: var(--ds-menu-seperator-color) !important;
+}
+button[data-resize-button=true] {
+	background: var(--emphasis-button) !important;
+	color: white !important;
+}
+button[data-resize-button=true]:hover {
+	background: var(--emphasis-button-hover) !important;
+}
+.ghx-inner {
+	color: var(--ds-text) !important;
+}
+.ghx-backlog-header .ghx-name {
+	color: var(--ds-text-highEmphasis) !important;
+}
+.subnavigator-title {
+	color: var(--h1-text) !important;
+}
+#board-tools-section-content, .jira-dialog * {
+	background-color: var(--ds-surface-overlay) !important;
+}
+.aui-list-item a {
+	color: var(--h1-text) !important;
+}
+.aui-list-item.active, .aui-list-item.active a {
+	background-color: var(--menu-hover) !important;
+}
+.aui-button {
+	background-color: var(--emphasis-button) !important;
+}
+.aui-button .aui-icon {
+		color: #FFF !important;
+}
+.aui-button[aria-expanded=true] {
+	background-color: var(--emphasis-button-hover) !important;
+}
+span[data-item-description=true], .ghx-sprint-goal, .ghx-dates>div, .ghx-issue-count, .ghx-key {
+	color: var(--ds-text-subtlest) !important;
+}
+#createGlobalItem {
+	background-color: var(--emphasis-button) !important;
+	cursor: pointer !important;
+	color: #FFF !important;
+}
+#createGlobalItem:hover {
+	background-color: var(--emphasis-button-hover) !important;
+}
+header[role=banner] {
+	background-color: #141414;
+}
+nav button {
+	background-color: #3b3b3b !important;
+	color: #decefa !important;
+	cursor: pointer;
+}
+nav button:hover {
+	background-color: #282828 !important;
+}
+.atlaskit-portal a[draggable=false]:hover, .atlaskit-portal a[draggable=false]:focus, atlaskit-portal a[draggable=false]:active, .atlaskit-portal button[type=button]:hover, .atlaskit-portal button[type=button]:focus, .atlaskit-portal button[type=button]:active {
+	background-color: var(--menu-hover);
+	cursor: pointer;
+}
+div[role=tablist] div:first-child {
+	color: #c1adea !important;
+}
+div[role=tablist] div:first-child span[data-selected=true]{
+	background-color: #c1adea;
+}
+div[role=tablist] div {
+	color: #a486e0;
+}
+div[role=tablist] div:hover {
+	color: #b9a2e7;
+}
+section[data-testid=switchTo__section] h1 {
+	color: var(--h1-text);
+}
+a.section-link * {
+	color: #a9a8ee !important;
+}
+a[data-testid^=switcher-item] div {
+	background-color: #4a10a9;
+}
