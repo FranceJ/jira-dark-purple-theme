@@ -7,13 +7,33 @@
 	--ds-text-subtle: #e2d8f5;
 	--ds-menu-seperator-color: #8c8891;
 	--ds-surface-overlay: #646169;
-	--ds-surface: #323132;
+	--ds-background-neutral-hovered: #370080;
+	--ds-border-focused: #732AEB;
+	--icon-secondary-color: #FFF !important;
+	--overlay-border: 1px solid #dfe1e6;
+	--border-radius: 3px;
+	--ds-surface: #232223;
 	--h1-text: #ece6f9;
 	--menu-hover: #3b3b3b;
 	--emphasis-button: #732AEB;
 	--emphasis-button-hover: #6600EB;
+	--emphasis-button-color: #FFF;
+	--input-bg: #656266;
 }
-.aui-page-panel, .ghx-backlog-container, .ghx-issue-compact, .ghx-end, .ghx-sprint-group, #ghx-pool, #ghx-column-header-group {
+h1, h1 *, h2, h2 * {
+	color: var(--h1-text) !important;
+}
+input, .ghx-backlog-search-container *,  {
+	background-color: var(--input-bg) !important;
+	color: var(--ds-text);
+}
+input::placeholder, .ghx-summary {
+	color: var(--ds-text) !important;
+}
+div[data-ds--text-field--container=true] {
+	border-color: var(--ds-text);
+}
+.aui-page-panel, .ghx-backlog-container, .ghx-issue-compact, .ghx-end, .ghx-sprint-group, #ghx-pool, #ghx-column-header-group, #ghx-backlog {
 	background-color: var(--ds-surface) !important;
 }
 .ghx-issue-compact {
@@ -29,26 +49,44 @@ button[data-resize-button=true] {
 button[data-resize-button=true]:hover {
 	background: var(--emphasis-button-hover) !important;
 }
+span[aria-label=search] svg path {
+	fill: var(--ds-text);
+}
 .ghx-inner {
 	color: var(--ds-text) !important;
 }
 .ghx-backlog-header .ghx-name {
 	color: var(--ds-text-highEmphasis) !important;
 }
+.ghx-column, .ghx-issue {
+	background-color: var(--menu-hover) !important;
+}
+.ghx-parent-group {
+	background-color: var(--ds-surface-overlay) !important;
+}
+.ghx-swimlane-header:after {
+	content: none !important;
+}
 .subnavigator-title {
 	color: var(--h1-text) !important;
 }
-#board-tools-section-content, .jira-dialog * {
+#board-tools-section-content, .jira-dialog *, .aui-inline-dialog-contents, .js-sprint-actions-list, div[data-role=droplistContent] {
 	background-color: var(--ds-surface-overlay) !important;
+	border: var(--overlay-border) !important;
+	border-radius: var(--border-radius) !important;
 }
 .aui-list-item a {
 	color: var(--h1-text) !important;
 }
-.aui-list-item.active, .aui-list-item.active a {
+.aui-list-item.active, .aui-list-item.active a, div[data-role=droplistContent] span[class^=Item__Span]:hover {
 	background-color: var(--menu-hover) !important;
 }
 .aui-button {
 	background-color: var(--emphasis-button) !important;
+	color: var(--emphasis-button-color) !important;
+}
+.aui-button:hover {
+	background-color: var(--emphasis-button-hover) !important;
 }
 .aui-button .aui-icon {
 		color: #FFF !important;
@@ -56,13 +94,19 @@ button[data-resize-button=true]:hover {
 .aui-button[aria-expanded=true] {
 	background-color: var(--emphasis-button-hover) !important;
 }
+.aui-button-link {
+	color: var(--emphasis-button-color) !important;
+}
+div[data-role=droplistContent] * {
+	color: var(--ds-text-highEmphasis) !important;
+}
 span[data-item-description=true], .ghx-sprint-goal, .ghx-dates>div, .ghx-issue-count, .ghx-key {
 	color: var(--ds-text-subtlest) !important;
 }
 #createGlobalItem {
 	background-color: var(--emphasis-button) !important;
 	cursor: pointer !important;
-	color: #FFF !important;
+	color: var(--emphasis-button-color) !important;
 }
 #createGlobalItem:hover {
 	background-color: var(--emphasis-button-hover) !important;
