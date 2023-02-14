@@ -3,13 +3,19 @@
 	--ds-text-link-resting: #a9a8ee;
 	--ds-text-highEmphasis: #decefa;
 	--ds-text-subtlest: #efe9f9;
-	--ds-text:  #decefa;
+	--ds-text: #decefa;
 	--ds-text-subtle: #e2d8f5;
+	--ds-text-selected: #decefa;
 	--ds-menu-seperator-color: #8c8891;
+	--ds-background-input: #646169;
 	--ds-surface-overlay: #646169;
+	--ds-background-neutral: #732AEB;
+	--ds-background-subtleNeutral-resting: #732AEB;
 	--ds-background-neutral-hovered: #370080;
+	--ds-background-neutral-subtle-hovered: #3b3b3b;
+	--ds-background-selected: #646169;
+	--ds-background-selected-hovered: #3b3b3b;
 	--ds-border-focused: #732AEB;
-	--icon-secondary-color: #FFF !important;
 	--overlay-border: 1px solid #dfe1e6;
 	--border-radius: 3px;
 	--ds-surface: #232223;
@@ -67,6 +73,9 @@ span[aria-label=search] svg path {
 .ghx-swimlane-header:after {
 	content: none !important;
 }
+.ghx-issue {
+	box-shadow: 0 1px 2px 0 var(--ds-menu-seperator-color) !important;
+}
 .subnavigator-title {
 	color: var(--h1-text) !important;
 }
@@ -96,6 +105,10 @@ span[aria-label=search] svg path {
 }
 .aui-button-link {
 	color: var(--emphasis-button-color) !important;
+	background-color: transparent !important;
+}
+.aui-button-link:hover {
+	background-color: transparent !important;
 }
 div[data-role=droplistContent] * {
 	color: var(--ds-text-highEmphasis) !important;
@@ -112,7 +125,7 @@ span[data-item-description=true], .ghx-sprint-goal, .ghx-dates>div, .ghx-issue-c
 	background-color: var(--emphasis-button-hover) !important;
 }
 header[role=banner] {
-	background-color: #141414;
+	background-color: #141414 !important;
 }
 nav button {
 	background-color: #3b3b3b !important;
@@ -146,4 +159,19 @@ a.section-link * {
 }
 a[data-testid^=switcher-item] div {
 	background-color: #4a10a9;
+}
+.favourite-btn-icon {
+	filter: invert(1);
+}
+. ak-renderer-document * {
+	color: var(--ds-text);
+}
+img[title="Zeplin"], img[title="InVision for Jira"] {
+	filter: invert(100%) sepia(100%) saturate(0%) brightness(119%) contrast(115%);
+}
+td .ghx-no-avatar, .jira-dialog-heading h2, .buttons, .ghx-avatar-img, .buttons-container, .jira-dialog-content {
+	border: none !important;
+}
+.ghx-assigned-work-table td {
+	vertical-align: none;
 }
