@@ -18,6 +18,7 @@
 	--ds-background-selected-hovered: #3b3b3b;
 	--ds-border-focused: #732AEB;
 	--ds-background-neutral-subtle: #232223;
+	--ds-surface-raised: #646169;
 	--overlay-border: 1px solid #dfe1e6;
 	--border-radius: 3px;
 	--ds-surface: #232223;
@@ -37,6 +38,9 @@ input, .ghx-backlog-search-container *,  {
 }
 input::placeholder, .ghx-summary {
 	color: var(--ds-text) !important;
+}
+input[placeholder="Search"] {
+	background-color: var(--ds-background-input);
 }
 div[data-ds--text-field--container=true] {
 	border-color: var(--ds-text);
