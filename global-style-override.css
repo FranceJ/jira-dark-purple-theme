@@ -1,5 +1,6 @@
 :root {
 	--main-link-color: #a9a8ee;
+	--ds-link: #decefa;
 	--ds-text-link-resting: #a9a8ee;
 	--ds-text-highEmphasis: #decefa;
 	--ds-text-subtlest: #efe9f9;
@@ -16,6 +17,7 @@
 	--ds-background-selected: #646169;
 	--ds-background-selected-hovered: #3b3b3b;
 	--ds-border-focused: #732AEB;
+	--ds-background-neutral-subtle: #232223;
 	--overlay-border: 1px solid #dfe1e6;
 	--border-radius: 3px;
 	--ds-surface: #232223;
